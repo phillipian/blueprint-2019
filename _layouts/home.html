@@ -6,8 +6,8 @@ layout: default
     {{ content }}
 </div>
 
-<div class='speakers'>
-    <h1 class='speakers-title'>Speakers</h1>
+<div class='section speakers'>
+    <h1 class='section-title'>Speakers</h1>
     {% for item in site.data.speakers %}
     <div class='speaker'>
         <img src='{{ site.baseurl }}/img/headshots/{{ item.tag }}.jpg'>
@@ -15,4 +15,12 @@ layout: default
         <div class='descript'><span>{{ item.descript }}</span></div>
     </div>
     {% endfor %}
+</div>
+
+<div class='section'>
+    <h1 class='section-title'>Workshops</h1>
+</div>
+
+<div class='section'>
+    <h1 class='section-title'>Register</h1>
 </div>

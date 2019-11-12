@@ -1,4 +1,4 @@
-.speakers-title{
+.section-title{
     font-size: 20px;
     letter-spacing: 6px;
     font-family: 'Roboto Mono';
@@ -7,9 +7,14 @@
     text-transform: uppercase;
 }
 
-.speakers{
+.section{
     width: 600px;
     margin: 128px auto;
+    padding-top: 64px;
+    border-top: 1px solid rgba(0,0,0,0.2); 
+}
+
+.speakers{
 
     img{
         max-width: 50%;
