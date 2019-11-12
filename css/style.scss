@@ -2,3 +2,136 @@
 ---
 
 @import "abstracts";
+@import "speakers";
+
+body{
+    margin: 0;
+    font-family: 'EB Garamond';
+    background-color: #eee;
+}
+
+.sidebar{
+    position: fixed;
+    left: -4px;
+    top: 0;
+    height: 100%;
+    width: 68px;
+    background-color: #222;
+    color: #fff;
+    transition: all 0.2s ease;
+
+    a{
+        color: unset;
+        text-decoration: none;
+        opacity: 0.7;
+
+        &:hover{
+            opacity: 1.0;
+        }
+    }
+
+    .backplip{
+        position: absolute;
+        white-space: nowrap;
+        height: 64px;
+        line-height: 64px;
+        transform-origin: top left;
+        transform: rotate(90deg);
+        top: 320px;
+        left: 64px;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    &:hover{
+        left: 0;
+    }
+}
+
+.topbar{
+    position: fixed;
+    top: 64px;
+    left: 32px;
+    padding: 24px;
+    background-color: #444;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    ::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: -42px;
+        width: 42px;
+        height: 100%;
+        background-color: #282828;
+        transition: 0.2s ease;
+    }
+    
+    .title{
+        color: #fff;
+        font-family: 'Roboto Mono';
+
+        span:first-of-type{
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        span:last-of-type{
+            font-size: 48px;
+            letter-spacing: 3px;
+        }
+    }
+
+    &:hover{
+        left: 42px;
+        background-color: #555;
+
+        ::before{
+            background-color: transparent;
+        }
+    }
+}
+
+.pliplogo{
+    position: absolute;
+    top: 270px;
+    width: 64px;
+
+    img{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.container{
+    padding-left: 64px;
+    border-left: 1px solid rgba(0,0,0,0.2);
+    width: 600px;
+    margin: 128px auto;
+    font-size: 48px;
+    line-height: 1.3;
+
+    p{
+        margin: 32px 0;
+    }
+
+    p:first-of-type{
+        strong{
+            font-weight: 800;
+        }
+    }
+
+    a{
+        color: rgba(0,0,0,0.5);
+        text-decoration: none;
+        padding-bottom: 4px;
+        border-bottom: 2px solid rgba(0,0,0,0.3);
+    }
+
+}
