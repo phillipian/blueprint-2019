@@ -1,0 +1,158 @@
+.sidebar{
+    box-sizing: border-box;
+    padding: 0 24px;
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    background-color: #222;
+    color: #fff;
+    transition: all 0.2s ease;
+
+    a{
+        color: unset;
+        text-decoration: none;
+        opacity: 0.7;
+
+        &:hover{
+            opacity: 1.0;
+        }
+    }
+
+    .backplip{
+        margin-left: 16px;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    &:hover{
+        left: 0;
+    }
+
+    .pliplogo{
+        height: 50%;
+
+        img{
+            max-height: 100%;
+        }
+    }
+}
+
+.topbar{
+    position: fixed;
+    background-color: #444;
+        
+    .title{
+        color: #fff;
+        font-family: 'Roboto Mono';
+
+        span:first-of-type{
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        span:last-of-type{
+            font-size: 48px;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .sidebar{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .topbar{
+        box-sizing: border-box;
+        padding: 0 24px;
+        width: 100%;
+        height: 64px;
+        left: 0;
+        bottom: 0;
+
+        .title{
+            height: 100%;
+        }
+
+        .title a{
+            span:first-of-type{
+                font-size: 16px;
+            }
+
+            span:last-of-type{
+                font-size: 24px;
+            }
+
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: 800px){
+    .sidebar{
+        left: -4px;
+        height: 100%;
+        width: 68px;
+
+        .backplip{
+            position: absolute;
+            white-space: nowrap;
+            height: 64px;
+            line-height: 64px;
+            transform-origin: top left;
+            transform: rotate(90deg);
+            top: 320px;
+            left: 64px;
+        }
+    }
+
+    .pliplogo{
+        position: absolute;
+        top: 270px;
+        width: 64px;
+
+        img{
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .topbar{
+        top: 64px;
+        padding: 24px;
+        left: 32px;
+        transition: all 0.2s ease;
+        cursor: pointer;
+
+        ::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: -42px;
+            width: 42px;
+            height: 100%;
+            background-color: #282828;
+            transition: 0.2s ease;
+        }
+
+        &:hover{
+            left: 42px;
+            background-color: #555;
+
+            ::before{
+                background-color: transparent;
+            }
+        }
+    }
+}
