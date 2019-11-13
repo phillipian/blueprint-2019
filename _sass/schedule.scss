@@ -1,0 +1,18 @@
+.schedule{
+
+    table{
+        margin: 0 auto;
+    }
+
+    td{
+        padding: 16px;
+        font-size: 20px;
+        vertical-align: unset;
+    }
+
+    table td:first-of-type{
+        text-align: right;
+        font-family: 'Roboto Mono';
+        font-size: 16px;
+    }
+}
