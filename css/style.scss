@@ -136,3 +136,33 @@ body{
     }
 
 }
+
+.section{
+    p{
+        font-size: 24px;
+        line-height: 1.6;
+    }
+
+    a{
+        color: rgba(0,0,0,0.5);
+        text-decoration: none;
+        padding-bottom: 4px;
+        border-bottom: 2px solid rgba(0,0,0,0.3);
+    }
+}
+
+.rsvp{
+    background-color: #008ab3;
+    padding: 16px;
+    display: inline-block;
+    
+    a{
+        font-family: 'Roboto Mono';
+        color: #fff;
+        border: none;
+    }
+
+    &:hover{
+        background-color: #00b4eb;
+    }
+}
