@@ -20,7 +20,6 @@
     }
 
     .backplip{
-        margin-left: 16px;
         font-size: 20px;
         font-style: italic;
     }
@@ -61,6 +60,11 @@
 }
 
 @media (max-width: 800px){
+
+    .backplip{
+        margin-left: 16px;
+    }
+
     .sidebar{
         display: flex;
         flex-flow: row nowrap;
@@ -97,6 +101,10 @@
 }
 
 @media (min-width: 800px){
+    .pliplogo{
+        left: 0;
+    }
+    
     .sidebar{
         left: -4px;
         height: 100%;
